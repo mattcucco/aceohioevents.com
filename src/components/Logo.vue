@@ -1,8 +1,6 @@
 <template>
 	<g-link class="logo" to="/">
-	  <span class="logo__text">
-	    &larr; {{ $static.metadata.siteName }}
-	  </span>
+	 <g-image alt="Logo image" src="https://aceohioevents.netlify.app/ace_ohio.png" />
 	</g-link>
 </template>
 
