@@ -1,17 +1,16 @@
 <template>
 	<div class="author">
-
 		<h1 v-if="showTitle" class="author__site-title">
-			{{ $static.metadata.siteName }}
+			Welcome to <br>{{ $static.metadata.siteName }}
 		</h1>
 
 		<p class="author__intro">
-			A simple, hackable & minimalistic starter for Gridsome that uses Netlify CMS for content.
+			Stay up to date with the latest news and events from our team!
 		</p>
 
 		<p class="author__links">
-			<a href="//twitter.com/suits_at">Follow on Twitter</a>
-			<a href="https://github.com/suits-at/netlifycms-gridsome">GitHub</a>
+			<a href="https://www.facebook.com/AbruzziColangeloEnterprises/">Facebook</a>
+			<a href="http://aceohioevents.eventbrite.com">Eventbrite</a>
 		</p>
 
 	</div>
