@@ -1,9 +1,30 @@
 <!DOCTYPE html>
 <html ${htmlAttrs}>
   <head>
+    <!--  Essential META Tags -->
+    <meta property="og:title" content="Ace Ohio Events" />
+    <meta property="og:type" content="article" />
+    <meta
+      property="og:image"
+      content="https://aceohioevents.netlify.app/assets/static/ace_ohio.png"
+    />
+    <meta
+      property="og:url"
+      content="https://aceohioevents.com/"
+    />
+    <meta name="twitter:card" content="https://aceohioevents.netlify.app/assets/static/ace_ohio.png" />
+
+    <!--  Non-Essential, But Recommended -->
+    <meta
+      property="og:description"
+      content="Latest news and updates from the Ace Ohio team"
+    />
+    <meta property="og:site_name" content="Ace Ohio Events" />
+    <meta name="twitter:image:alt" content="Ace Ohio Events Logo" />
+
     ${head}
-		<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-	</head>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  </head>
   <body ${bodyAttrs}>
     <script>
       // Add dark / light detection that runs before Vue.js load. Borrowed from overreacted.io
@@ -12,34 +33,34 @@
         function setTheme(newTheme) {
           window.__theme = newTheme;
           preferredTheme = newTheme;
-          document.body.setAttribute('data-theme', newTheme);
+          document.body.setAttribute("data-theme", newTheme);
           window.__onThemeChange(newTheme);
         }
 
         var preferredTheme;
         try {
-          preferredTheme = localStorage.getItem('theme');
-        } catch (err) { }
+          preferredTheme = localStorage.getItem("theme");
+        } catch (err) {}
 
         window.__setPreferredTheme = function(newTheme) {
           setTheme(newTheme);
           try {
-            localStorage.setItem('theme', newTheme);
+            localStorage.setItem("theme", newTheme);
           } catch (err) {}
-        }
+        };
 
-        var darkQuery = window.matchMedia('(prefers-color-scheme: dark)');
+        var darkQuery = window.matchMedia("(prefers-color-scheme: dark)");
         darkQuery.addListener(function(e) {
-          window.__setPreferredTheme(e.matches ? 'dark' : 'light')
+          window.__setPreferredTheme(e.matches ? "dark" : "light");
         });
 
-        setTheme(preferredTheme || (darkQuery.matches ? 'dark' : 'light'));
+        setTheme(preferredTheme || (darkQuery.matches ? "dark" : "light"));
       })();
     </script>
 
     <script>
       if (window.netlifyIdentity) {
-        window.netlifyIdentity.on("init", user => {
+        window.netlifyIdentity.on("init", (user) => {
           if (!user) {
             window.netlifyIdentity.on("login", () => {
               document.location.href = "/admin/";
@@ -49,7 +70,6 @@
       }
     </script>
 
-    ${app}
-    ${scripts}
+    ${app} ${scripts}
   </body>
 </html>
