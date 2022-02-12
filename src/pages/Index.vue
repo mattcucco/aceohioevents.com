@@ -13,7 +13,7 @@
 
 <page-query>
 query {
-  posts: allPost(filter: { published: { eq: true }}) {
+  posts: allPost(sortBy: "ordinal", order: ASC, filter: { published: { eq: true }}) {
     edges {
       node {
         id
@@ -21,6 +21,8 @@ query {
         date (format: "D. MMMM YYYY")
         timeToRead
         description
+        ordinal
+        hyperurl
         cover_image (width: 770, height: 380, blur: 10)
         ...on Post {
         id
