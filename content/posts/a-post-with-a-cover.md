@@ -7,5 +7,6 @@ tags:
   - dragway42
 cover_image: ../../static/images/uploads/summer_slam_big.png
 description: Upcoming event @ Dragway 42. More details coming soon!
+ordinal: 0
 ---
 More details coming soon!
