@@ -3,6 +3,16 @@
 		<h1 v-if="showTitle" class="author__site-title">
 			Welcome to <br>{{ $static.metadata.siteName }}
 		</h1>
+
+		<p class="author__intro">
+			Stay up to date with the latest news and events from our team!
+		</p>
+
+		<p class="author__links">
+			<a href="https://www.facebook.com/AbruzziColangeloEnterprises/">Facebook</a>
+			<a href="http://aceohioevents.eventbrite.com">Eventbrite</a>
+		</p>
+
 	</div>
 </template>
 

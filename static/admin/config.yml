@@ -1,7 +1,6 @@
 site_url: https://aceohioevents.netlify.app
 logo_url: https://aceohioevents.netlify.app/ace_ohio.png
 publish_mode: editorial_workflow
-show_preview_links: false
 
 backend:
   name: git-gateway
@@ -31,18 +30,6 @@ collections:
         name: "tags"
         widget: "list"
         field: {label: Name, name: name, widget: string, default: "tag"}
-      - {label: "Is Hyperlink Block", name: "is_link", widget: "boolean", default: false,  required: true, hint: "Setting to true makes the entire block serve as a button to an external link"}
-      - {label: "URL", name: "block_link", widget: "string",  required: false, hint: "The external link used if _Is Hyperlink Block_ is set to __true__"}
-      - label: "Quick Link"
-        name: "quick_link"
-        widget: "object"
-        required: false
-        collapsed: true
-        hint: "Creates a button to an external link for quick access (aka. a _Buy Now_ button)"
-        fields:
-          - { label: "URL", name: "url", widget: "string", default: "", required: true }
-          - { label: "Button Label", name: "display", widget: "string", default: "", required: false }
       - {label: "Cover Image", name: "cover_image", widget: "image", required: false}
       - {label: "Description", name: "description", widget: "markdown"}
-      - {label: "Body", name: "body", widget: "markdown", required: false}
-      - {label: "Ordinal", name: "ordinal", widget: "number", default: 0, required: false, hint: "Used to determine the order in which this block will appear. Lower value = higher display order"}
+      - {label: "Body", name: "body", widget: "markdown"}

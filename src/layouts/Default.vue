@@ -9,35 +9,27 @@
       </div>
     </header>
     <main class="main">
-      <slot />
+      <slot/>
     </main>
     <footer class="footer">
-      <p class="author__links">
-        <a href="https://www.facebook.com/AbruzziColangeloEnterprises/"
-          >Facebook</a
-        >
-        <a href="http://aceohioevents.eventbrite.com">Eventbrite</a>
-      </p>
-      <span class="footer__copyright"
-        >Copyright © Ace Ohio Events LLC {{ new Date().getFullYear() }}.
-      </span>
+      <span class="footer__copyright">Copyright © Ace Ohio Events LLC {{ new Date().getFullYear() }}. </span>
     </footer>
   </div>
 </template>
 
 <script>
-import Logo from "~/components/Logo.vue";
-import ToggleTheme from "~/components/ToggleTheme.vue";
+import Logo from '~/components/Logo.vue'
+import ToggleTheme from '~/components/ToggleTheme.vue'
 
 export default {
   props: {
-    showLogo: { default: true },
+    showLogo: { default: true }
   },
   components: {
     Logo,
-    ToggleTheme,
-  },
-};
+    ToggleTheme
+  }
+}
 </script>
 
 <style lang="scss">
@@ -47,7 +39,7 @@ export default {
   align-items: center;
   min-height: var(--header-height);
   padding: 0 calc(var(--space) / 2);
-  top: 0;
+  top:0;
   z-index: 10;
 
   &__left,
@@ -74,10 +66,10 @@ export default {
   justify-content: center;
   padding: calc(var(--space) / 2);
   text-align: center;
-  font-size: 0.8em;
+  font-size: .8em;
 
   > span {
-    margin: 0 0.35em;
+    margin: 0 .35em;
   }
 
   a {
