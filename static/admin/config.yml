@@ -1,5 +1,5 @@
-site_url: https://aceohioevents.netlify.app
-logo_url: https://aceohioevents.netlify.app/ace_ohio.png
+site_url: http://aceohioevents.com/
+logo_url: http://aceohioevents.com/assets/static/ace_ohio.png
 publish_mode: editorial_workflow
 
 backend:
