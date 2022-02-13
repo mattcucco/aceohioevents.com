@@ -5,3 +5,18 @@
 @import 'code';
 @import 'content-box';
 @import 'utils';
+
+
+.button-primary {
+    text-decoration: none;
+    padding: .4rem;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.button-xl{
+    min-height: .6rem;
+    min-width: 1rem;
+}

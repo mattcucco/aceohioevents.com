@@ -19,7 +19,7 @@
       </div>
     </a>
     <div v-else>
-            <div class="post-card__header">
+      <div class="post-card__header">
         <g-image
           alt="Cover image"
           v-if="post.cover_image"
@@ -29,8 +29,10 @@
       </div>
       <div class="post-card__content">
         <h2 class="post-card__title" v-html="post.title" />
+        <g-link  v-if="post.quicklink"
+          :href="post.quicklink"
+          class="quick-link" :to="post.quicklink">{{ post.quicklink_label }}</g-link>
         <p class="post-card__description" v-html="post.description" />
-
         <PostMeta class="post-card__meta" :post="post" />
         <PostTags class="post-card__tags" :post="post" />
 
@@ -58,7 +60,7 @@ export default {
   margin-bottom: var(--space);
   position: relative;
 
-  a{
+  a {
     text-decoration: none;
   }
 
@@ -106,4 +108,17 @@ export default {
     z-index: 0;
   }
 }
+.quick-link {
+    font-size: 0.8em;
+    color: var(--title-color) !important;
+    text-decoration: none;
+    background-color: var(--quick-buy-color);
+    padding: 0.5em;
+    border-radius: var(--radius);
+    display: block;
+    max-width: fit-content;
+    margin-bottom: 10px;
+    z-index: 5;
+    position: relative;
+  }
 </style>

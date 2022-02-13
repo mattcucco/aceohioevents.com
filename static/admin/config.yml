@@ -35,4 +35,6 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Ordinal", name: "ordinal", widget: "number", default: 0, required: false, hint: "Used to determine the order in which this block will appear. Lower value = higher display order"}
       - {label: "External Hyperlink", name: "hyperurl", widget: "string", required: false, hint: "By providing a link here, this block will be converted into a giant hyperlink"}
+      - {label: "Quick Link", name: "quicklink", widget: "string", required: false, hint: "Creates a _quick buy_ button under the post title"}
+      - {label: "Quick Link Label", name: "quicklink_label", widget: "string", required: false, hint: "Label for the quick link button"}
       
