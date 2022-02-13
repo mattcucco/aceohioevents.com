@@ -6,7 +6,14 @@ tags:
   - aceohio
   - dragway42
 cover_image: ../../static/images/uploads/summer_slam_big.png
-description: Upcoming event @ Dragway 42. More details coming soon!
+description: |-
+  Upcoming event @ Dragway 42. More details coming soon!
+
+  Pre-registration begins March 15, 2022!
 ordinal: 0
+quicklink: https://aceohio-summerslam2022.eventbrite.com
+quicklink_label: Pre-Register Now
 ---
-More details coming soon!
+Upcoming event @ Dragway 42. More details coming soon!
+
+**Pre-registration begins March 15, 2022!**

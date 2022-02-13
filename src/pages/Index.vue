@@ -23,6 +23,8 @@ query {
         description
         ordinal
         hyperurl
+        quicklink
+        quicklink_label
         cover_image (width: 770, height: 380, blur: 10)
         ...on Post {
         id

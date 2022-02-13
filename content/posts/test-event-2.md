@@ -8,5 +8,7 @@ description: "# Find us on Facebook to keep up with all the latest news and
   updates from our team here at Ace Ohio!"
 ordinal: 999
 hyperurl: https://www.facebook.com/AbruzziColangeloEnterprises
+quicklink: ""
+quicklink_label: ""
 ---
 # Find us on Facebook to keep up with all the latest news and updates from our team here at Ace Ohio!
