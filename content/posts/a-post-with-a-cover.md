@@ -12,7 +12,7 @@ description: |-
   Pre-registration begins March 15, 2022!
 ordinal: 0
 quicklink: https://aceohio-summerslam2022.eventbrite.com
-quicklink_label: Pre-Register Now
+quicklink_label: Pre-Register
 ---
 Upcoming event @ Dragway 42. More details coming soon!
 
