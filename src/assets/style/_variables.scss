@@ -11,7 +11,8 @@ body {
   --body-color: #444;
   --title-color: #111;
   --link-color: #474443;
-  --quick-buy-color: rgba(243, 17, 17, 0.472);
+  --quick-buy-color: rgb(243, 17, 17);
+  --quick-buy-text: rgb(255, 255, 255);
   --border-color: rgba(0, 0, 0, 0.1);
   --space: 3.5rem;
   --content-width: 860px;
@@ -40,4 +41,5 @@ body[data-theme="dark"] {
   --title-color: #fff;
   --link-color: #af9cef;
   --quick-buy-color: rgb(243, 17, 17);
+  --quick-buy-text: rgb(255, 255, 255);
 }

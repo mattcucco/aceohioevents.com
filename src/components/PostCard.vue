@@ -14,7 +14,7 @@
       </div>
       <div class="post-card__content">
         <h2 class="post-card__title" v-html="post.title" />
-        <p class="post-card__description" v-html="post.description" />
+        <div class="post-card__description" v-html="post.description" />
         <PostTags class="post-card__tags" :post="post" />
       </div>
     </a>
@@ -32,10 +32,9 @@
         <g-link  v-if="post.quicklink"
           :href="post.quicklink"
           class="quick-link" :to="post.quicklink">{{ post.quicklink_label }}</g-link>
-        <p class="post-card__description" v-html="post.description" />
+        <div class="post-card__description" v-html="post.description" />
         <PostMeta class="post-card__meta" :post="post" />
         <PostTags class="post-card__tags" :post="post" />
-
         <g-link class="post-card__link" :to="post.path">Link</g-link>
       </div>
     </div>
@@ -110,7 +109,7 @@ export default {
 }
 .quick-link {
     font-size: 0.8em;
-    color: var(--title-color) !important;
+    color: var(--quick-buy-text) !important;
     text-decoration: none;
     background-color: var(--quick-buy-color);
     padding: 0.5em;
