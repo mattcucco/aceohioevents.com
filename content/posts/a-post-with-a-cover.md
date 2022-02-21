@@ -6,14 +6,17 @@ tags:
   - aceohio
   - dragway42
 cover_image: ../../static/images/uploads/summer_slam_big.png
-description: |-
-  Upcoming event @ Dragway 42. More details coming soon!
+description: >-
+  A.C.E. Ohio Events Triple 20k is a fun family friendly event that is capped at
+  400 entries, 2 entries per person that strive to give the racers the same
+  treatment we would want at an event.   We can't wait to see you there!
 
-  Pre-registration begins March 15, 2022!
+
+  Pr-registration begins March 15, 2022!
 ordinal: 0
 quicklink: https://aceohio-summerslam2022.eventbrite.com
 quicklink_label: Pre-Register
 ---
-Upcoming event @ Dragway 42. More details coming soon!
+A.C.E. Ohio Events Triple 20k is a fun family friendly event that is capped at 400 entries, 2 entries per person that strive to give the racers the same treatment we would want at an event.   We can't wait to see you there!
 
-**Pre-registration begins March 15, 2022!**
+**Pr-registration begins March 15, 2022!**
