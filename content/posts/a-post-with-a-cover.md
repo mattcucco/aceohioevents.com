@@ -13,7 +13,7 @@ ordinal: 0
 quicklink: https://aceohioevents.tracksideapp.com/
 quicklink_label: Pre-Register
 ---
-**[Tickets available here](https://aceohioevents.tracksideapp.com/)**
+**[Tickets available here](https://aceohioevents.tracksideapp.com/)** - **Aug 25th - 28th**
 
 ACE Ohio Events Triple 20k is a fun family friendly event that is capped at 400 entries, 2 entries per person. We strive to give the racers the same treatment we would expect at an event. We can't wait to see you there!
 
